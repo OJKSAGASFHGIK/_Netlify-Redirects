@@ -1,2 +1,2 @@
-publish = "."
+publish = "casa"
 command = "echo 'no build script'"
