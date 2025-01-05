@@ -1,2 +1,2 @@
-publish = "."
-command = "echo 'no build script'"
+publish = "public"
+command = "npm run build"
