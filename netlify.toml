@@ -1,2 +1,2 @@
-publish = "public"
+publish = "./public"
 command = "echo 'no build script'"
