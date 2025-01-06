@@ -2,7 +2,7 @@ publish = "."
 command = "echo 'no build script'"
 
 [[redirects]]
-    from = "./../1.ProjectNotes/1.HTMLandCSSnotes/*"
-    to = "./../1.ProjectNotes/1.HTMLandCSSnotes/:splat"
+    from = "./sorvete/1.ProjectNotes/1.HTMLandCSSnotes/*"
+    to = "./sorvete/1.ProjectNotes/1.HTMLandCSSnotes/:splat"
     status = 200
     force = true
