@@ -1,2 +1,0 @@
-publish = "."
-command = "npm run build"
