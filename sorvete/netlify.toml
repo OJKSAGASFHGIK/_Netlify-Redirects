@@ -1,3 +1,2 @@
-base = "public"
 publish = "."
 command = "npm run build"
