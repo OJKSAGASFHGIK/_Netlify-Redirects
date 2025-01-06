@@ -1,2 +1,2 @@
-publish = "."
+publish = "public/index.html"
 command = "npm run build"
