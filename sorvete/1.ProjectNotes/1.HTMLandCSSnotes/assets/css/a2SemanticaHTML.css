@@ -1,0 +1,11 @@
+* {padding:0px; margin:0px;}
+
+header {color:white;background:red; height:13.9860vh;}
+nav {color:white;background:blue; height:13.9860vh;}
+section {background:yellow; height:13.9860vh;}
+article {background:pink; height:13.9860vh;}
+aside {background:cyan; height:13.9860vh;}
+footer {color:white;background:red; height:13.9860vh;}
+
+header, nav, section, article, aside, footer {padding:0px;border:black solid 1px;
+    font-size: 12px;}

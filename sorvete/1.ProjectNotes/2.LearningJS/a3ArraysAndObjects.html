@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer="defer"></script>
+
+    <script src="assets\jsCodes\a3ArraysAndObjects.js" defer></script>
+</head>
+
+<body style="background:gray; font-size:27px;">
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#p1">a1[0] = "c";</a></li>
+            <li><a href="#p2">v1.length</a></li>
+            <li><a href="#p3">Array.isArray(v1);</a></li>
+            <li><a href="#p4">delete v1[0];</a></li>
+            <li><a href="#p5">v1.splice(0, 0, "a","b");</a></li>
+            <li><a href="#p6">v1.unshift("a"); v1.push("a");</a></li>
+            <li><a href="#p7">v1.shift(); v1.pop();</a></li>
+            <li><a href="#p8">v4 = v1.concat(v2,v3);</a></li>
+            <li><a href="#p9">v1.slice(1,4);</a></li>
+            <li><a href="#p10">v1.filter(a => a % 3 === 1 || a % 3 === 2)</a></li>
+            <li><a href="#p11">v1.sort(function(a, b){return a - b;});</a></li>
+            <li><a href="#p12">function func1(valor) { return Math.max.apply(null,v1Array); }</a></li>
+            <li><a href="#p13">function func1(a1) { return a1 > 10; } v1 = v1.filter(func1);</a></li>
+            <li><a href="#p14">// Object bases</a></li>
+            <li><a href="#p15">v1[Object.keys(v1)[0]]</a></li>
+        </ul>
+    </aside>
+
+    <!---->
+    <div id="p1">
+        <h1 class="line">a1[0] = "c";</h1>
+        <pre>
+let a1 = ["a", "b"];
+let a2 = {key1:"a", key2:"b"};
+a1[0] = "c";
+        </pre>
+        <div class="block" id="id1">
+            <!--output-->
+        </div>
+        <pre>
+-Note:
+let a3 = new Array("a", "b");
+        </pre>
+    </div>
+
+    <!---->
+    <div id="p2">
+        <h1 class="line">v1.length "length conta o total de valores"<br>
+            "forma eficaz de pegar o último valor do array"</h1>
+        <pre>
+let a4 = ["a", "c", "b", 1, 5, 3, 2];
+ids.id2.textContent= a4[a4.length-1] ;
+        </pre>
+        <div class="block" id="id2">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p3">
+        <h1 class="line">Array.isArray(v1);</h1>
+        <div class="block" id="id3">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p4">
+        <h1 class="line">delete v1[0]; // note that the valor [5] is undefined</h1>
+        <pre>
+let a5 = ["a", "c", "b", 1, 5, 3, 2];
+delete a5[5];
+        </pre>
+        <div class="block" id="id4">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p5">
+        <h1 class="line">v1.splice(<span class="a1c">0</span>,
+            <span class="a4c">0</span>,
+            <span class="a6c">"a","b"</span>);<br>
+            <span class="a1c">0¹ position: To select the position of valor</span><br>
+            <span class="a4c">1¹ position: How much valors will pop</span><br>
+            <span class="a6c">2¹, 3¹, 4¹... position: Valors that you will append...</span>
+        </h1>
+        <pre>
+let a6 = ["a", "c", "b", 1, 5, 3, 2];
+a6.splice(5,2,3,2,1);
+        </pre>
+        <div class="block" id="id5">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p6">
+        <h1 class="line">v1.unshift("a"); v1.push("a");</h1>
+        <pre>
+let a7 = [a,c,b,1,5,3,2,1];
+a7.unshift("d"); a7.push("d");
+        </pre>
+        <div class="block" id="id6">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p7">
+        <h1 class="line">v1.shift(); v1.pop();</h1>
+        <pre>
+let a8 = [d,a,c,b,1,5,3,2,1,d];
+a8.shift(); a8.pop();
+        </pre>
+        <div class="block" id="id7">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p8">
+        <h1 class="line">v4 = v1.concat(v2,v3);</h1>
+        <pre>
+let a9 = [a,c,b,1,5,3,2,1];
+let a10 = ["d", "e", "f"];
+let a11 = ["g", "h"];
+let a12 = a9.concat(a10,a11);
+        </pre>
+        <div class="block" id="id8">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p9">
+        <h1 class="line">v1.slice(1,4);</h1>
+        <pre>
+a12 = [a,c,b,1,5,3,2,1,d,e,f,g,h];
+let a13 = a12.slice(1,11);
+        </pre>
+        <div class="block" id="id9">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p10">
+        <h1 class="line">v1.filter(a => a % 3 === 1 || a % 3 === 2)</h1>
+        <pre>
+let a14 = a13.filter(a => a % 3 === 1 || a % 3 === 2);
+        </pre>
+        <div class="block" id="id10">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p11">
+        <h1 class="line">v1.sort(function(a, b){return a - b;}); // or:<br>
+            v1.sort(function(a, b){return b - a;});<br>
+            // We do it in this form for the code works how we expect<br>
+            // It just works for numbers</h1>
+        <pre>
+let a15 = [1,5,2,1];
+a15.push(15,13,12,100);
+a15.sort(function(a, b) {return a - b;});
+        </pre>
+        <div class="block" id="id11">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p12">
+        <h1 class="line">function func1(valor) { return Math.max.apply(null,v1Array); }<br>
+            function func1(valor) { return Math.min.apply(null,v1Array); }<br>
+            // It will return de biggest(or smallest) value</h1>
+        <pre>
+let a16 = [1,1,2,5,12,13,15,100];
+function func1(a1) { return Math.max.apply(null,a1); }
+function func2(a1) { return Math.min.apply(null,a1); }
+        </pre>
+        <div class="block" id="id12">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p13">
+        <h1 class="line">function func1(a1) { return a1 > 10; }<br>
+            v1 = v1.filter(func1);
+        </h1>
+        <pre>
+a17 = [1,1,2,5,12,13,15,100];
+function func3(a1) { return a1 > 10; }
+a17 = a17.filter(func3);
+        </pre>
+        <div class="block" id="id13">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p14">
+        <h1 class="line">Object bases</h1>
+        <pre>
+let a18 = {
+    key0:"banana",
+    key1:"apple",
+    key2:"mushroom",
+    keyFunc1(){ return this.key1 ;},
+};
+a18["key3"] = "u.u" ;
+
+delete a18["key0"];
+
+ids.id14.textContent= a18["key1"] ;
+        </pre>
+        <div class="block" id="id14">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p15">
+        <h1 class="line">v1[Object.keys(v1)[0]] // take for index</h1>
+        <pre>
+a18
+        </pre>
+        <div class="block" id="id15">
+            <!--output-->
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+html {
+    color: white;
+
+    background: rgb(40,0,30);}
+
+.hBlock { display:block;
+    width: 243px;
+    height: 162px;
+    padding: 1px 9px;
+    background:cyan;
+    border: 3px solid black;
+    margin: 0 auto 18px auto;
+    box-sizing: border-box;
+
+    overflow:hidden;}
+
+.h2Block { display:block;
+    width: 243px;
+    height: 162px;
+    padding: 1px 9px;
+    background:yellow;
+    border: 3px double black;
+    margin:18px;
+    box-sizing: border-box;
+
+    overflow-y:scroll;
+    float:left;}
+
+.h3Block { display:block;
+    width: 100%;
+    height: 100%;
+    padding: 1px 9px;
+    background:magenta;
+    border: 3px groove yellow;
+    margin:18px;
+    box-sizing: border-box;
+
+    max-width:243px;
+    max-height:162px;
+    min-width:0;
+    min-height:0;
+
+    overflow-y:auto;
+    box-sizing:border-box;
+    float:left;}
+
+/*second deepening*/
+body .redBoxLine {
+    box-sizing:border-box;
+    width:33.33%;
+    height:243px;
+    padding:3px;
+    
+    float: left;}
+
+.redBoxLine .redBoxLineP {
+    width:100%;
+    height:100%;
+    
+    background:red;}
+
+body .yellowBoxLine {
+    width:33.33%;
+    height:243px;
+    box-sizing:border-box;
+    padding:3px;
+    
+    float:left;}
+
+.yellowBoxLine .yellowBoxLineP {
+    width:100%;
+    height:100%;
+    background:yellow;}
+
+.yellowBoxLine .yellowBoxLineP::after {
+    content:'content:'';display:block;clear:both;';
+    display:block;
+    clear:both;}
+
+.bigBlock {
+    font-size:27px;
+    background:magenta;
+    box-sizing:content-box;
+    display:block;
+    clear:left;}

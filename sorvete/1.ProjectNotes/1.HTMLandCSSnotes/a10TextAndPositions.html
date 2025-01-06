@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and position</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a10TextAndPositions.css">
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <h2>Text styles</h2>
+    <p style="font-size:18px">time: 17:09 / link:
+        https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165794#overview<br>
+        -Deep in:<br>
+        {direction:ltr}
+    </p>
+
+    <div class="lineBlack"></div>
+    <p class="pClass">4:37 - p {font-size:12px;<br>
+        font-style:italic;<br>
+        font-weight:bold;<br>
+        direction:ltr;<br>
+        letter-spacing:1px;<br>
+        word-spacing:3px;<br>
+        line-height:27px;<br>
+        text-align:center;text-align:left;text-align:right;<br>
+        text-decoration:overline;text-decoration:underline;text-decoration:line-through;}<br></p>
+    <div class="lineBlack"></div>
+    <p class="pClass2">6:47 - p {text-indent:27px;<br>
+        text-shadow: 2px 2px yellow;text-shadow: 2px 2px 5px yellow;text-shadow: -2px -2px 0 yellow;}<br>
+        9:12 - p {text-transform:lowercase;text-transform:uppercase;text-transform:capitalize;}<br></p>
+
+    <div class="lineBlack"></div>
+    <div class="classDiv">
+        <div class="classDiv2"></div>
+        <div class="classDiv3">
+            <div>Some other text</div>
+        </div>
+    </div>
+    <p class="pMargin">margin-top:117px;</p>
+    <ul>
+        <li class="liPositionSticky">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li class="liPositionSticky">10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li class="liPositionSticky">20</li>
+    </ul>
+    <pre style="font-size:14px">
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165792#overview
+4:37 - p { font-size:12px;
+    font-style:italic;
+    font-weight:bold;
+    direction:ltr;
+    letter-spacing:1px;
+    word-spacing:3px;
+    line-height:9px;
+    text-align:center;text-align:left;text-align:right;
+    text-decoration:overline;text-decoration:underline;text-decoration:line-through;}
+6:47 - p {text-indent:9px;
+    text-shadow: 2px 2px yellow;text-shadow: 2px 2px 5px yellow;text-shadow: -2px -2px 0 yellow;}
+9:12 - p {text-transform:lowercase;text-transform:uppercase;text-transform:capitalize;}
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165794#overview
+2:53 - .classDiv {top:50px;
+    left:50px;
+    position:relative;position:absolute;position:static;position:fixed;}
+
+5:32 - 'error'
+
+7:53 - 'tip:'
+{width:100%;height100%;background:(0,0,0,0.5)}
+
+15:53 - .classDiv {z-index:-1;}
+22:27 - .classDiv .classDivChild {background:#fff;
+    font-size:50px;
+    top:50px;
+    left:50px;
+    position:absolute;}
+
+24:30 - 'Note:'
+    top:30%;
+
+28:07 - ul li.class{background:black;
+    top:0;
+    position:sticky;}
+</pre>
+</body>
+
+</html>

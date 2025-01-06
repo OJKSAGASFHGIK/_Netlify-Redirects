@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a7PseudoClasses.css" />
+</head>
+
+<body class="bodyDark">
+    <section id="Layout" class="button"></section>
+
+    <div>
+        <a href="#" class="b1hover">WEBSITE</a>
+        <input type="search" placeholder="search" style="font-size:24px;" class="linkCSS">
+    </div>
+    <p style="background:black;color:black;">.</p>
+    <p>Lorem ipsum
+        <a href="#">dolor</a>
+        sit amet
+        <a href="#">consectetur</a> adipisicing elit.
+        <a href="#">Quisquam</a>, nulla ullam
+        <a href="#">vel</a> aperiam, voluptate enim
+    </p>
+    <label for="test" style="cursor:pointer">u.u</label>
+    <input type="checkbox" id="test" name="test" style="cursor:pointer">
+    <p>
+        porro officiis nisi
+    </p>
+    <p style="color:black;background:black;">.</p>
+    <div class="mainList">
+        <ul class="listCSS">
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>::first letter :nth-child(3n+2)</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+            <li>adipisicing elit. Aliquid</li>
+        </ul>
+    </div>
+    <p style="color:black;background:black;">.</p>
+    <p class='first-L-CSS'>first-line<br>
+        first-line<br>
+        first-line
+    </p>
+    <p>color:initial and color:inherit
+        'in this case, the color inherit is 'white', and
+        the color initial is 'black'.'
+    </p>
+    <div style="color:black;background:black;">a</div>
+    <pre>
+        -First thing don't mentioned. Similar with put modules in python, in CSS when
+        you have to put CSS effects, you have to import it in 'head', using the tag:
+        link rel='stylesheet' href='path' /
+        0 - 'rel is a essential command for call the attributes'
+        
+        ===
+        -Pseudo-classes:
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165758#learning-tools
+        1:35 - .sameName:hover {background: red;}
+        2:02 - .sameName {transition: all 729ms ease-in-out;}
+        
+        5:10 - linkCSS:link { color:pink; }
+        5:33 - linkCSS:visited { color:deeppink; }
+        5:55 - linkCSS:hover { background:white; color:black; text-decoration:none; }
+        
+        6:41 - linkCSS:active {background:yellow; color:black; text-decoration:none; }
+        8:11 - input:focus { box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); outline:none; border: 1px solid black; }
+        10:07 - input:disabled { background-color:gray; cursor:not-allowed; }
+        13:22 - input:checked + p { background:pink; }
+        '+ p is for just the first command'
+        14:36 - .class li:first-child
+        .class li:last-child
+        16:49 - input:required { background:gray; }
+        
+        ===
+        -Pseudo-classe :not():
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165760#overview
+        0:30 - p:not(.class) {color:red;}
+        'It's combo with input:checked + p'
+        <!--input:not(command/class that you want active)-->
+        2:09 - input:not(:checked) {background:red;}
+        
+        ===
+        -Pseudo-classe :nth-child():
+        1:34 - ul li:nth-child(2) {background:red;}
+        2:16 - ul li:nth-child(even) {background-color:rebeccapurple;}
+        ul li:nth:child(odd) {background-color:pink;}
+        3:34 - ul li:nth-child(3n) {background-color:red;}
+        4:36 - ul li:nth-child(3n+5) {background-darkred}
+        6:12 - <!--It can be did too with 'p tag'-->
+        
+        ===
+        -Pseudo-elements:
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165766#overview
+        1:21 - ul li::after {content: ' - ';}
+        2:42 - ul li::before {content: ' - '; display:block;}
+        4:99 - p::first-letter {font-size:27px;display:block;float:left;margin:0 9px 0 0;}
+        p {font-size:12px;}
+        6:50 - p::first-line {}
+        7:12 - p::selection {background:red; color:white;}
+        9:04 - ::placeholder {}
+        
+        ===
+        -Specificity CSS(go deeper, if you have):
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165780#overview
+        9:42 - 'example (you can do this):'
+        p::selection:hover
+        12:48 - 'for keep the first style forever (unless that you use another):'
+        !important;
+        
+        ===
+        -Inheritance e properties that pass for childs elements(go deeper, if you have):
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165782#overview
+        6:10 - 'example:'
+        #texto {font-size:27px;color:red;}
+        p {font-size:initial;color:inherit;}
+    </pre>
+
+</body>
+
+</html>

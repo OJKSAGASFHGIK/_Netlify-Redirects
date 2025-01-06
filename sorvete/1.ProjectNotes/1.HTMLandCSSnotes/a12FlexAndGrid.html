@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and grid</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a12FlexAndGrid.css">
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <h2 id="a0">Flex</h2>
+    <ul class="bList">
+        Topics:
+        <li><a href="#a1">base flex</a></li>
+        <li><a href="#a2">justify-content:space-around;</a></li>
+        <li><a href="#a3">justify-content:space-between;</a></li>
+        <li><a href="#a4">justify-content:space-evenly;</a></li>
+        <li><a href="#a5">cool idea</a></li>
+        <li><a href="#a6">cool idea</a></li>
+        <li><a href="#a7">justify-content:center;align-items:center;</a></li>
+        <li><a href="#a8">align-items:baseline;</a></li>
+        <li><a href="#a9">section 2 / display:inline-flex;</a></li>
+        <li><a href="#a11" class="bHover">Grid</a></li>
+    </ul>
+
+    <div class="yellowLine"></div>
+    <p id="a1">base flex: display:flex;flex-direction:row;justify-content:start;align-items:stretch;</p>
+    <div class="div1">
+        <div class="div2">1</div>
+        <div class="div2">2</div>
+        <div class="div2">3</div>
+        <div class="div2">4</div>
+        <div class="div2">5</div>
+        <div class="div2">6</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a2">justify-content:space-around;</p>
+    <div class="div3">
+        <div class="div4">1</div>
+        <div class="div4">2</div>
+        <div class="div4">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a3">justify-content:space-between;</p>
+    <div class="div5">
+        <div class="div6">1</div>
+        <div class="div6">2</div>
+        <div class="div6">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a4">justify-content:space-evenly;</p>
+    <div class="div7">
+        <div class="div8">1</div>
+        <div class="div8">2</div>
+        <div class="div8">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <h5 style="margin-block-end:0;">Cool ideas:</h5>
+    <p id="a5" style="font-size:21px;">.div {justify-content:space-evenly;} div div
+        {background:cyan;width:100%;margin:1%;}</p>
+    <div class="div9">
+        <div class="div10">1</div>
+        <div class="div10">2</div>
+        <div class="div10">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a6" style="font-size:21px;">.div {justify-content:space-evenly;gap:27px;} div div
+        {background:cyan;width:100%;}</p>
+    <div class="div11">
+        <div class="div12">1</div>
+        <div class="div12">2</div>
+        <div class="div12">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <h5 style="margin-block-end:0;">Coming back to the topic</h5>
+    <p id="a7" style="font-size:21px;">justify-content:center;align-items:center;</p>
+    <div class="div13">
+        <div class="div14">1</div>
+        <div class="div14">2</div>
+        <div class="div14">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a8" style="font-size:21px;">.divBase {align-items:baseline;}<br>
+        div:nth-child(3) {font-size: 27px;}</p>
+    <div class="div15">
+        <div class="div16">1</div>
+        <div class="div16">2</div>
+        <div class="div16">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <h3 id="bTopic">Section 2</h3>
+    <ul class="bList" id="a9">
+        Topics:
+        <li><a href="#a0" id="a0">section 1</a></li>
+        <li><a href="#a10">display:inline-flex;</a></li>
+        <li><a href="#a11" id="a11Btext">Grid - grid-template-columns: 33.3% 33.3% 33.3%;</a></li>
+    </ul>
+    <div class="yellowLine"></div>
+    <p id="a10" style="font-size:21px;">display:inline-flex;</p>
+    <div class="div17">
+        <div class="div18">1</div>
+        <div class="div18">2</div>
+        <div class="div18">3</div>
+    </div>
+    <span>'- this tag 'span' will stay inline.'</span>
+
+    <div class="yellowLine"></div>
+    <h2 id="a11">Grid</h2>
+    <ul class="bList">
+        <li><a href="#bTopic" class="bHover">Flex - section 2</a></li>
+        <li><a href="#a12">grid-template-columns:30% 30% 30%;</a></li>
+        <li><a href="#a13">grid-template-colums: repeat(auto-fill, minmax(320px, 1fr))</a></li>
+        <li><a href="#a14">grid-column-start:2;grid-column-end:span2;grid-row-start:1;</a></li>
+        <li><a href="#bTopic2" class="bHover">Grid - section 2 - grid-area:2/3/3/4;</a></li>
+    </ul>
+
+    <div class="yellowLine"></div>
+    <p id="a12" style="font-size:21px;">.divBase {display:grid; grid-template-columns:30% 30% 30%; gap:27px;}</p>
+    <div class="div19">
+        <div class="div20">1</div>
+        <div class="div20">2</div>
+        <div class="div20">3</div>
+    </div>
+    <p style="font-size:21px;">Or better:<br>grid-template-columns:1fr 1fr 1fr; gap:27px;</p>
+    <div class="div19p2">
+        <div class="div20p2">1</div>
+        <div class="div20p2">2</div>
+        <div class="div20p2">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a13" style="font-size:21px;">.divBase {grid-template-colums: repeat(auto-fill, minmax(320px, 1fr))};</p>
+    <div class="div21">
+        <div class="div22">1</div>
+        <div class="div22">2</div>
+        <div class="div22">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <p id="a14" style="font-size:21px;">.divBase div:nth-child(3)
+        {background:magenta; grid-column-start:2;grid-column-end:span2;grid-row-start:1;}</p>
+    <div class="div23">
+        <div class="div24">1</div>
+        <div class="div24">2</div>
+        <div class="div24">3</div>
+    </div>
+
+    <h3 id="bTopic2">Grid - section 2 - grid-area:2/3/3/4;</h3>
+    <ul class="bList">
+        <li><a class="bHover" href="#a11">Grid</a></li>
+        <li><a href="#a15">grid-area:2/3/3/4;</a>
+        <li><a href="#bTopic3" class="bHover">Grid - section 3</a></li>
+    </ul>
+
+    <div class="yellowLine"></div>
+    <p id="a15" style="font-size:21px;">'height-top/width-left/height-bottom/width-right'. Example:<br>
+        .divBase .div:nth-child(2) {background:yellow;grid-area:2/3/3/4;}</p>
+    <div class="div25">
+        <div class="div26">1</div>
+        <div class="div26">2</div>
+        <div class="div26">3</div>
+    </div>
+
+    <h3 id="bTopic3">Grid - section 3</h3>
+    <ul class="bList" id="bTopic3">
+        <li><a href="#bTopic2" class="bHover">Grid - section 2 - grid-area:2/3/3/4;</a>
+        <li><a href="#a16">grid-template-areas: 'a3 a1 a2';</a>
+        <li><a href="#a17">mini landing page with breakpoints</a></li>
+    </ul>
+
+    <div class="yellowLine"></div>
+    <p>
+    <pre id="a16" style="font-size:21px;">
+.divBase div {display:grid;
+    grid-template-rows: 81px;
+    grid-template-columns: 81px 1fr 81px;
+    grid-template-areas: 'a3 a1 a2';
+    gap:27px;}
+.divBase {background:cyan;}
+.divBase div:nth-child(1) {grid-area:a1}
+.divBase div:nth-child(2) {grid-area:a2}
+.divBase div:nth-child(3) {grid-area:a3}
+    </pre>
+    </p>
+    <div class="div27">
+        <div class="div28">1</div>
+        <div class="div28">2</div>
+        <div class="div28">3</div>
+    </div>
+    <div class="yellowLine"></div>
+    <pre id="a17" style="font-size:21px;">
+'-Mini landing page with breakpoints:'
+
+.div29 {display:grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'logH4 logH4'
+    'menuNav textH5'
+    'footerFooter footerFooter';
+    gap:3px;}
+.div30 {background:cyan;}
+.div29 .div30:nth-child(1) {grid-area:logH4; background:magenta;
+    display:flex; justify-content:center; align-items:center;}
+.div29 .div30:nth-child(2) {grid-area:menuNav; background:yellow; color:black;}
+.div29 .div30:nth-child(3) {grid-area:textH5; color:black;
+    padding:9px;}
+.div30 h5 {display:flex; justify-content:center;}
+.div29 .div30:nth-child(4) {grid-area:footerFooter; background:red;
+    padding:9px;}
+
+@media all and (max-width:721px) {.div29 {display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'logH4'
+    'menuNav'
+    'textH5'
+    'footerFooter';
+    gap:3px;}}
+    </pre>
+    <div class="div29">
+        <div class="div30">
+            <h4>h4 log</h4>
+        </div>
+        <div class="div30">
+            <ol>ol
+                <li><a href="#">li a</a></li>
+                <li><a href="#">li a</a></li>
+                <li><a href="#">li a</a></li>
+            </ol>
+        </div>
+        <div class="div30">
+            <h5>h5 text</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eos quibusdam ipsum excepturi eligendi
+                cumque laudantium, ab assumenda culpa dignissimos, dolorem, cupiditate fugiat dolores reiciendis
+                doloribus eveniet ea provident soluta?</p>
+        </div>
+        <div class="div30">
+            <footer>footer</footer>
+        </div>
+    </div>
+    <p style="font-size:21px;">Resume:</p>
+    <pre style="color:black;background:pink;font-size:15px;">
++Flexbox:
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165816#overview
+-link:https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#um_aparte_no_modelo_flex
+3:52 - display:flex;
+5:03 - 'You get some properties using 'display:flex' , how:
+    'flex-direction:row; justify-content:flex-start; align-items:stretch;''
+5:26 - 'for 'div' base'
+    flex-direction:row,column;
+8:20 - 'for 'div' base:'
+    .divBase {justify-content:flex-start,flex-end,center,space-around,space-between,space-evenly;}
+
+12:57 - ''div' idea for use in 'div div':'
+    div div {width:100%;background:magenta;margin10px;}
+
+13:16 - div {gap:30px;} div div {width:100%;background:magenta;}
+
+15:22 - .divBase {align-items:stretch,flex-start,center,flex-end,baseline;}
+
+15:35 - 'cool idea for '.divBase':'
+    .divBase {justify-content:center;align-items:center;}
+
+17:04 - 'Cool idea:'
+.divBase {align-items:baseline;}
+div:nth-child(3) {font-size: 27px;}
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165848#overview
+00:00 - 'if have much text:'
+    .divBase {flex wrap:wrap;}
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165820#overview
+-link:https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+1:02 - display:inline-flex;
+1:24 - display:flex;
+1:50 - .divBase div {width:100%;}
+
+4:58 - ''flex-grow' and 'flex-shrink' use 1 and 0, that means negative and positive'
+4:58 - div {flex-grow: 1, 0;} <-- Deep in
+6:21 - div {flex-basis: 243px;} <-- Deep in
+8:55 - div {flex-shrink: 0, 1;} <-- Deep in
+10:00 - ''flex:' 'flex-grow' 'flex-shrink' 'flex-basis'' <-- Deep in
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165822#overview <-- Deep in
+
+===
++Grid:
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165824#overview
+2:53 - .divBase {display:grid; grid-template-columns:33.3% 33.3% 33.3%; gap:30px;}
+.divBase div {background:tomato; min-height:100px;}
+
+'or:'
+
+grid-template-columns:1fr 1fr 1fr;
+
+6:33 - .divBase {max-width:960;
+    margin: 0 auto:}
+7:53 - .divBase {grid-template-columns: repeat{3, 1fr};}
+10:20 - .divBase {grid-template-colums: repeat(auto-fill, minmax(320px, 1fr))};
+15:10 - .divBase div:nth-child(5) {background:darkred; grid-column-start: 2; grid-column-end: 4;}
+
+19:46 - .divBase div:nth-child(5) {background:darkred; grid-column: span 2; grid-row: span 1;}
+22:46 - @media (max:width:640px) {.divBase div:nth-child(5) {grid-column:span 1;}}
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165828#overview
+5:39 - .divBase div:nth-child(5) { grid-area: 1 / 1 / 4 / 3; }
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165832#overview
+-link:https://developer.mozilla.org/pt-BR/docs/Web/CSS/grid
+-link:https://www.w3schools.com/css/css_grid.asp
+-link:https://css-tricks.com/snippets/css/complete-guide-grid/
+5:55 - .divBase .divBase2 {display:grid;
+    grid-template-rows:50px 1fr 50px;
+    grid-template-columns:200px 1fr;
+    grid-template-areas:'name1'
+        'name2'
+        'name3'
+        'name4'}
+
+.divBase2 div:nth-child(1) {grid-area:name1;}
+.divBase2 div:nth-child(2) {grid-area:name2;}
+.divBase3 div:nth-child(3) {grid-area:name3;}
+.divBase4 div:nth-child(4) {grid-area:name4;}
+
+9:00 - 'I think...'
+10:50 - 'Do a 'log(h1)', 'menu(nav)', 'text(h2)', 'footer(footer)''
+12:23 - @media (max-width:640px) {
+    .divBase .divBase2 {display:grid;
+        grid-template-rows:50px 1fr 50px;
+        grid-template-columns:200px 1fr;
+        grid-template-areas:''name1'
+            'name2'
+            'name3'
+            'name4''}
+}
+</pre>
+</body>
+
+</html>

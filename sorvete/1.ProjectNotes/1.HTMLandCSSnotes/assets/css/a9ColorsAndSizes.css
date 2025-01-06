@@ -1,0 +1,34 @@
+html {
+    font-size: 27px;
+    color: white;
+
+    background: rgb(40,0,30);}
+
+#a0 {font-size:1in;}
+#a1 {font-size:18px;}
+#a2 {font-size:0.5em;}
+#a3 {font-size:0.5rem;}
+.aVMin {font-size:3vmax;}
+.aVMax {font-size:3vmin;}
+
+.a1background {background:red;
+width:243px;height:243px;
+margin:3px;}
+.a2background {background:magenta;
+width:243px;height:243px;
+margin:3px;}
+.a3background {background:cyan;
+width:243px;height:243px;
+margin:3px;}
+.a4background {background:yellow;
+width:243px;height:243px;
+margin:3px;}
+
+.a1background > div {background:magenta;
+    width:50%;height:50%;}
+.a2background > div {background:cyan;
+    width:50%;height:50%;}
+.a3background > div {background:yellow;
+    width:50%;height:50%;}
+.a4background > div {background:red;
+    width:50%;height:50%;}

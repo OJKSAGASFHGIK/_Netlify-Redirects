@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <script src="assets\jsCodes\a4LogicAndOrganization.js" defer></script>
+</head>
+
+<body style="background:gray; font-size:27px;">
+    <section id="Layout" class="button"></section>
+
+    <div title="aside">
+        <div title="part1">
+            <div class="l-topicSeparator">Conditions</div>
+            <aside class="button2mini-menu">
+                <ul>
+                    <li><a href="#a1p1title">if else if else</a></li>
+                    <li><a href="#a1p2title">switch</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div title="part2">
+            <div class="l-topicSeparator">Function</div>
+            <aside class="button2mini-menu">
+                <ul>
+                    <li><a href="#a2p1title">Fuction</a></li>
+                    <li><a href="#a2p2title">input type="text" / button onclick="func1()"</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div title="part3">
+            <div class="l-topicSeparator">Classes</div>
+            <aside class="button2mini-menu">
+                <ul>
+                    <li><a href="#a3p1title">The base</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div title="part4">
+            <div class="l-topicSeparator">Repetitive structures</div>
+            <aside class="button2mini-menu">
+                <ul>
+                    <li><a href="#a4p1title">The base</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!---->
+    <!---->
+    <!---->
+
+    <!--part1 Conditions-->
+    <div class="l-topicSeparator2">Conditions</div>
+    <div title="part1 Conditions">
+        <div id="a1p1title">
+            <h1 class="line">if else if else</h1>
+            <pre>
+let a1p1Hours = new Date().getHours();
+let a1p1Minutes = new Date().getMinutes();
+let a1p2Salutation;
+if (a1p1Hours < 6) {a1p2Salutation = "It's early morning.";
+} else if (a1p1 < 12) {a1p2Salutation = "It's morning.";
+} else if (a1p1 < 18) {a1p2Salutation = "It's afternoon.";
+} else {a1p2Salutation = "It's night."}
+ids1.id1p1.textContent= a1p2Salutation+" - "+a1p1Hours+":"+a1p1Minutes ;
+            </pre>
+            <div class="block" id="id1p1">
+                <!--output-->
+            </div>
+        </div>
+
+        <!--a1p1title id1p1-->
+        <div id="a1p2title">
+            <h1 class="line">switch</h1>
+            <pre>
+function funcP1p1Day() {
+    let a1p3Day = new Date().getDay();
+
+    switch (a1p3Day) {
+        case 0 || 6:
+            document.getElementById("id1p3Msg").innerHTML = "End of week"; break;
+        default:
+            document.getElementById("id1p3Msg").innerHTML = "Midle of week";
+    }
+}
+            </pre>
+            <div title="button" class="block">
+                <button onclick="funcP1p1Day()">Ok</button>
+                <p id="id1p3Msg"></p>
+            </div>
+        </div>
+
+        <!---->
+    </div>
+
+
+    <!--part2 Functions-->
+    <div class="l-topicSeparator2">Function</div>
+    <div title="part2 Functions">
+        <!---->
+        <div id="a2p1title">
+            <h1 class="line">Fuction</h1>
+            <pre>
+function func1(a1, a2) { return a1 + a2; }
+let a1 = func1(1, 2);
+            </pre>
+            <div class="block" id="id2p1">
+                <!--output-->
+            </div>
+        </div>
+
+        <!---->
+        <div id="a2p2title">
+            <h1 class="line">input type="text"</h1>
+            <pre id="noteP2p1"></pre>
+            <div class="block">
+                <input id="id2p2input" type="text" placeholder="Put your name">
+                <button onclick="funcP2p2()">Send</button>
+                <p id="id2p2output"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--part3 Classes-->
+    <div class="l-topicSeparator2">Classes</div>
+    <div title="part3 Classes">
+        <div id="a3p1title">
+            <h1 class="line">The base</h1>
+            <pre>
+class ClassP4p1Person {
+    constructor(name, cpf, zipCode) {
+        this.name = name; this.cpf = cpf; this.zipCode = zipCode;
+    }
+
+    eat() {
+        return this.name + " was working, now will eat.";
+    }
+}
+
+function funcP4p1() { 
+    let a4p1Gustavo = new ClassP4p1Person("Gustavo", 1, 1);
+    document.getElementById("id4p1Gustavo").innerHTML= a4p1Gustavo.eat() + `<br>
+    CPF: ${a4p1Gustavo.cpf} / Zip Code: ${a4p1Gustavo.zipCode}`;
+}
+            </pre>
+            <div class="block">
+                <button onclick="funcP3p1()">Gustavo are working...</button>
+                <p id="id3p1Gustavo"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--part4 Repetitive Structures-->
+    <div class="l-topicSeparator2">Repetitive structures</div>
+    <div title="part4 Repetitive Structures">
+        <div id="a4p1title">
+            <h1 class="line">The base</h1>
+            <pre id="noteP4p1"></pre>
+            <select id="id4p1Date" class="block">
+                <option selected disabled>Date:</option>
+            </select>
+        </div>
+    </div>
+
+</body>
+
+</html>

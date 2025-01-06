@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer="defer"></script>
+
+    <script src="assets\jsCodes\a1PrintTypes.js" defer></script>
+</head>
+
+<body style="background:gray; font-size:27px;">
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#p1">.innerHTML="str";</a></li>
+            <li><a href="#p2">.document.write("str");</a></li>
+            <li><a href="#p2p2">v.textContent= ;</a></li>
+            <li><a href="#p3">Notas extras importantes:</a></li>
+        </ul>
+    </aside>
+
+    <!---->
+    <div id="p1">
+        <h1 class="line">.innerHTML="str";</h1>
+        <pre>
+ document.getElementById("id1").innerHTML="str";
+        </pre>
+        <div class="block" id="id1">
+        </div>
+    </div>
+
+    <div id="p2">
+        <h1 class="line">document.write("str");</h1>
+        <pre>
+ Alguma tag html > tag script > document.write("str");
+            </pre>
+        <div class="block">
+            <script>document.write("str");</script>
+        </div>
+    </div>
+
+    <div id="p2p2">
+        <h1 class="line">v.textContent= ;</h1>
+        <pre>
+ let a1 = document.getElementById("id2")
+ a1.textContent= "str" ;
+            </pre>
+        <div class="block" id="id2">
+        </div>
+    </div>
+
+    <div id="p3">
+        <h1 class="line">Notas extras importantes:</h1>
+        <pre>
+ alert("str"); // pisca um alerta na página
+ console.log("str"); // para digitar comandos no console/terminal
+            </pre>
+    </div>
+    </div>
+
+</body>
+
+</html>

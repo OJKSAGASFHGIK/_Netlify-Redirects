@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <script src="assets\jsCodes\a6SetTime.js" defer="defer"></script>
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#p1">setTimeout() clearTimeout()</a></li>
+            <li><a href="#p2">setInterval() clearInterval()</a></li>
+        </ul>
+    </aside>
+
+
+    <!---->
+    <div id="p1">
+        <h1 class="line">setTimeout() clearTimeout()</h1>
+        <pre id="pre1"></pre>
+        <div class="block">
+            <button onclick="func1Counter()">Resume</button>
+            <button onclick="func1CounterStop()">Stop</button>
+            <p id="id1Counter"></p>
+        </div>
+    </div>
+
+    <div id="p2">
+        <h1 class="line">setInterval() clearInterval()</h1>
+        <pre id="pre2"></pre>
+        <div class="block">
+            <button onclick="func2setInterval()">Resume</button>
+            <button onclick="func2clearInterval()">Stop</button>
+            <p id="id2Counter">10</p>
+        </div>
+    </div>
+</body>
+
+</html>

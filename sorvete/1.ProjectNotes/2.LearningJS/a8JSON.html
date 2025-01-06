@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer="defer"></script>
+
+    <script src="assets\jsCodes\a8JSON.js" defer></script>
+</head>
+
+<body style="background:gray; font-size:27px;">
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#p1">JSON.stringify(a1Person)</a></li>
+            <li><a href="#p2">JSON.parse(a1JSON_Stringify)</a></li>
+            <li><a href="#p3">Simple GET</a></li>
+            <li><a href="#p4">new XMLHttpRequest() // ajax</a></li>
+        </ul>
+    </aside>
+
+    <!---->
+    <div id="p1">
+        <h1 class="line">JSON.stringify(a1Person)<br>
+            // Error example (It's a text)</h1>
+        <pre id="pre1"></pre>
+        <div class="block" id="id1Test">
+            <!--output-->
+        </div>
+    </div>
+
+    <div id="p2">
+        <h1 class="line">JSON.parse(a1JSON_Stringify)<br>
+            // Bug fixed (It's a object)</h1>
+        <pre id="pre2"></pre>
+        <div class="block" id="id2JSON_Parse">
+            <!--output-->
+        </div>
+    </div>
+
+    <div id="p3">
+        <h1 class="line">Simple GET</h1>
+        <pre id="pre3"></pre>
+        <div class="block">
+            <pre style="content: none" id="id3Link"></pre>
+        </div>
+    </div>
+
+    <div id="p4">
+        <h1 class="line">new XMLHttpRequest() // ajax</h1>
+        <pre id="pre4"></pre>
+        <div class="block">
+            <label for="id4input">Search:</label>
+            <input type="text" id="id4input">
+            <button onclick="a4searchCEP()">ok</button>
+            <p id="id4output"></p>
+        </div>
+    </div>
+</body>
+
+</html>

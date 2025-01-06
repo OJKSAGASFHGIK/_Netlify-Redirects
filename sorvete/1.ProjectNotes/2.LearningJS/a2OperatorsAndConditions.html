@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer="defer"></script>
+
+    <script src="assets\jsCodes\a2OperatorsAndConditions.js" defer></script>
+</head>
+
+<body style="background:gray; font-size:27px;">
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#p1">+ - * / ++ --</a></li>
+            <li><a href="#p2">+= -= *= /=</a></li>
+            <li><a href="#p3">> >= == != === !==</a></li>
+            <li><a href="#p4">&& ||</a></li>
+            <li><a href="#p5">"Condição resumida:"</a></li>
+            <li><a href="#p6">!</a></li>
+        </ul>
+    </aside>
+
+    <!---->
+    <div id="p1">
+        <h1 class="line">+ - * / ++ --</h1>
+        <pre>
+ a1 = 2 + 1;
+ a1++;
+        </pre>
+        <div class="block" id="id1">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p2">
+        <h1 class="line">+= -= *= /=</h1>
+        <pre>
+ let a2 = 6;
+ a2 += a1;
+        </pre>
+        <div class="block" id="id2">
+            <!--output-->
+        </div>
+    </div>
+
+    <!---->
+    <div id="p3">
+        <h1 class="line">> >= == != === !==</h1>
+        <pre>
+ a3 = 3;
+ a4 = "3";
+ ids.id3.textContent = a3>=a4 ;
+        </pre>
+        <div class="block" id="id3">
+            <!--output-->
+        </div>
+        <pre>
+ a3===a4
+        </pre>
+        <div class="block" id="id4">
+            <!--output-->
+        </div>
+    </div>
+
+    <!--id4-->
+    <div id="p4">
+        <h1 class="line">&& || "Conditions about if and else"</h1>
+        <pre>
+a5 = 18; a6 = 3;
+a7BoolAnd = false;
+a8BoolOr = false;
+
+if (a5 && a6 > 9) {
+    a7BoolAnd = true;
+} else if (a5 || a6 > 9) { 
+    a8BoolOr = true;
+}
+            </pre>
+        <div class="block">a7BoolAnd = <span id="id5" style="color:red;"></span></div>
+        <div class="block">a8BoolOr = <span id="id6" style="color:red;"></span></div>
+    </div>
+
+    <!--id6-->
+    <div id="p5">
+        <h1 class="line">"Condição resumida:"
+            <br>v2bool = (v1condition &lt; 18) ? "Vai retornar if" : "Vai retornar else";
+        </h1>
+        <pre>
+a9Age = 17;
+a10Validator = (a9Age >= 18) ? "Maior de 18" : "Menor que 18" ;
+            </pre>
+        <div class="block" id="id7"></div>
+    </div>
+
+    <!--id7-->
+    <div id="p6">
+        <h1 class="line">!</h1>
+        <pre>
+let a11 = !("9"===9);
+            </pre>
+        <div class="block" id="id8"></div>
+    </div>
+
+</body>
+
+</html>

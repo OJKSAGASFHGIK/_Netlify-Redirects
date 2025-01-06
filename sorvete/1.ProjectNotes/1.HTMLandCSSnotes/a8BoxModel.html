@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a8BoxModel.css">
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <p>
+        link:
+        <br>
+        time:
+    </p>
+
+    <div class="hBlock">
+        <h1>{overflow:hidden;}</h1>
+        <p>margin: 0 auto 18px auto;
+        </p>
+    </div>
+    <div class="h2Block">
+        <h1>{overflow-y:scroll;}</h1>
+        <p>p aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </div>
+    <div class="h3Block">
+        <h1>{overflow-y:auto;}</h1>
+        <p>p aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+    </div>
+
+    <div class="bigBlock">
+        <b>===</b><br>
+        {clear:left;}
+    </div>
+    <div class="redBoxLine">
+        <p class="redBoxLineP">p</p>
+    </div>
+    <div class="redBoxLine">
+        <p class="redBoxLineP">p</p>
+    </div>
+    <div class="redBoxLine">
+        <p class="redBoxLineP">p</p>
+    </div>
+    <div class="yellowBoxLine">
+        <p class="yellowBoxLineP">p</p>
+    </div>
+    <div class="yellowBoxLine">
+        <p class="yellowBoxLineP">p</p>
+    </div>
+    <div class="yellowBoxLine">
+        <p class="yellowBoxLineP">p</p>
+    </div>
+    <div class="bigBlock" style="margin-top:27px;">
+        <br>
+        <b>===</b><br>
+        {clear:left;}
+    </div>
+    <pre>
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165784#overview
+        2:36 - { display:block; }
+        4:56 - { display:inline; }
+        7:00 - { overflow:hidden; }
+        {overflow:auto;}
+        
+        8:52 - { max-width:100%; }
+        {max-height:100%;}
+        { min-width:100%; }
+        {min-height:100%;}
+        
+        13:34 - { margin: 0 auto 50px auto; }
+        18:41 - { box-sizing: content-box; }
+        {border: 5px solid black;}
+        {padding: 50px;}
+        21:20 - { box-sizing: border-box; }
+        25:12 - { border: double; }
+        25:56 - { border-width: 3px;
+        border-style: groove;
+        border-color: red; }
+        
+        ===
+        link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165786#overview
+        7:44 - div {float:left;}
+        11:16 - p {clear:left;}
+        11:58 - 'another variation is clear:both;'
+        12:46 - .class::after { content:'---------'; display: block; clear: both; }
+        14:20 - width:33.33%;
+        16:31 - .class .classP { width:100%; height:100%; background:red; }
+        17:02 - .class { box-sizing:border-box; padding:3px; }
+        
+    </pre>
+</body>
+
+</html>

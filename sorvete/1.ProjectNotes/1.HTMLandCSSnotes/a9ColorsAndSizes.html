@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and sizes</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a9ColorsAndSizes.css">
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <p>=========</p>
+    <p>Base size = 27px</p>
+    <a href="#a4">in</a>
+    <a href="#a5">px</a>
+    <a href="#a6">em</a>
+    <a href="#a7">rem</a>
+
+    <div id="a0">1in</div>
+    <div id="a1">18px</div>
+    <div id="a2">0.5em / 'em is egual to the 1¹ base element(html)'</div>
+    <div id="a3">0.5rem / 'rem is egual to the base element'</div>
+
+    <div class="a1background" id="a4">
+        <div>50%</div>
+    </div>
+    <div class="a2background" id="a5">
+        <div>50%</div>
+    </div>
+    <div class="a3background" id="a6">
+        <div>50%</div>
+    </div>
+    <div class="a4background" id="a7">
+        <div>50%</div>
+    </div>
+
+    <div class="aVMin">3vmin / 'relative to window(1% to smaller dimension window)'</div>
+    <div class="aVMax">3vmax / 'relative to window(1% to bigger dimension window)'</div>
+    <pre style="font-size:14px;">
+===
+-Colors in HTML:
+link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165788#overview
+1:21 - 'color base: ABCDEF123456789 / Example:#ABC123'
+4:32 - 'color base RGB: (255,255,255) / Example: rgb(0,255,0)'
+5:59 - 'link html color codes:
+https://htmlcolorcodes.com'
+8:59 - rgba(0,0,0,0.27)
+10:03 - #fff
+10:50 -  'hsla means = hue, saturation and lightness'
+hsla(0,100%,50%,81%)
+===
+-Sizes:
+link: https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165790#overview
+link: https://www.w3schools.com/cssref/css_units.php
+0:00 - font-size: 1px;
+
+4:57 - 'em is egual to the 1¹ base element(html)'
+4:57 - font-size: 0.5em;
+
+7:40 - 'rem is egual to the base element'
+7:40 - font-size: 1rem;
+
+13:28 - ''vw' is egual to 1% width of the viewport'
+13:28 - width:100vw;
+15:10 - ''vh' is egual to 1% height of the viewport'
+15:10 - height:100vh;
+
+18:32 - a href='#one' div id='one'
+19:43 - 'try click in your id'
+19:43 - scroll-behavior:smooth;
+
+22:04 - 'relative to the base. ex:'
+22:04 - .first > div {background: deeppink; width: 50%; heigth: 50rem;}
+
+23:39 - 'vmin Relative to 1% of viewport's* smaller dimension	
+vmax Relative to 1% of viewport's* larger dimension, example:'
+font-size: 1vmin;
+</pre>
+</body>
+
+</html>

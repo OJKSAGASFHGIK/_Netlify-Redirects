@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        background: red
+    }
+
+    #red {
+        color: red
+    }
+
+    #blu {
+        color: blue
+    }
+
+    #Bblu {
+        background: blue
+    }
+
+    .HeIsReallyYellow {
+        background: yellow
+    }
+
+    .ImBlue {
+        color: blue
+    }
+
+    .BGray {
+        background: gray
+    }
+
+    .button {
+        font-size: 27px;
+        padding: 9px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button a {
+        color: red;
+    }
+
+    .button select {
+        text-decoration: none;
+        font-size: 27px;
+    }
+</style>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <h1>First depeening: Commands even class 281</h1>
+    <h2>
+        Cool text? I don't know (<b>text in h1</b>)
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis <br>
+        culpa consequatur fugit a labore facilis vero aliquid inventore quod quia, <br>
+        repudiand ae quidem odit. Laboriosam provident tempora exercitationem <br>
+        vel iste. (one crazy text in latin)<br>
+        <b>^^ In this text</b> I used 'p' for text and 'br' for break lines.
+
+        <span class="HeIsReallyYellow">span</span>
+        <span class="BGray">span</span>
+        <span id="blu">span</span>
+        <span class="ImBlue">span</span>
+        <span>and you continue writing in the same line with another effects using
+            'span'.</span>
+
+    <h1>I'm yet red...</h1>
+    <h2 id="blu">I'm blue becouse to 'style' type used.</h2>
+    <b>^^ These are formatting types of colors in CSS3<br>=========</b>
+    <br><b id="ImYellow" class="HeIsReallyYellow">
+        You use '.' to refer to the class in CSS3
+        (<b>The 'id' is the priority</b>).
+    </b>
+
+    Much types in CSS3 can use <b class="HeIsReallyYellow">the same class</b> and<br>
+    apply the same preset. <b id="ImRed" class="ImBlue">Really creative</b>.
+
+    <h1>I'm 'h1'</h1>
+    <h2>I'm 'h2'</h2>
+    <h3>I'm 'h3'</h3>
+    <h4>I'm 'h4'</h4>
+    <h5>I'm 'h5'</h5>
+    <h6>I'm 'h6'</h6>
+
+    <b class='BGray'>===</b><br>
+    You can change colors and backgrounds just using <b style="color: red">
+        a command 'b style="color:red"' in the same line</b>.<br>
+    <b style="background: yellow"> And you can change everything that you
+        want in this form, how 'b style="background:yellow"'</b>.
+    b = bold. <br>
+    It's something that we have to talk... about the <b>fonts</b>:
+    I'll leave you a resume about these for you:<br>
+    =<br>
+    <b>b</b> = means bold(state physical) / <strong>strong</strong> = means strong<br>
+    <i>i</i> = means italic(state physical) / <em>em</em> = means emphasis<br>
+    <del>del</del> = means delete / <ins>ins</ins> = means insert<br>
+    <s>s</s> = similar at del(state physical) / <i>i</i> = similar at ins(state physical)
+    <br><small>small</small> / <big>big</big><br>
+    0<sup>sup</sup> / 0<sub>sub</sub><br>
+    <q>q</q> / <code>code</code> = for code<br>
+    <pre>pre 
+        pre 
+                pre = for free write and spaces
+    </pre>
+    <span>span</span> = for use style / <div>div</div> = It's a block ^^
+    <ul>
+        <li><a href="#">'ul' means unordored list</a></li>
+        <li><a href="#">you use 'li' for put your text</a></li>
+    </ul>
+    <ol>
+        <li>You too can use ordered list, 'ol'</li>
+        <li>And using 'li' too</li>
+        <li>.</li>
+    </ol>
+    <br>
+    <b class="BGray">===</b><br>
+    Now let see somethings about link:
+    <br>
+    =
+    <br>
+    <h2>Another diversity commands:</h2>
+    =<br>
+    <spam style="font-size:24px">style='font-size:24px'</spam><br>
+    <spam class="BGray">===</spam><br>
+    <a href='https://media.tenor.com/fAVCE3Qu6s8AAAAd/astolfo-happy.gif' target="_blank">
+        a href='link' target='_blank'
+        <br>img src='link' alt='semantic' width='means width' height='means height' /a
+        <br><img src='https://media.tenor.com/D7lJ8mZG0UoAAAAC/astolfo-fate.gif' alt="Astolfo gif" width='400'
+            height='220'>
+    </a>
+    <br>
+    <q cite="https://media.tenor.com/fAVCE3Qu6s8AAAAd/astolfo-happy.gif">q cite='link'</q>
+    </p>
+    <blockquote cite="https://media.tenor.com/fAVCE3Qu6s8AAAAd/astolfo-happy.gif">
+        <p>blockquote (you have to do your blockquote out of 'p')</p>
+    </blockquote>
+    <p>
+        <!-- 2 -->
+    <h1>Second deepening:</h1>
+    <h2>Semantic organization:</h2>
+
+    <header>
+        <spam id="red">header<br></spam>
+        <h3><a href="#">h3 /Home/ h3</a></h3>
+        <div>div /Site description or options/ div</div>
+        <spam id="red">header<br></spam>
+    </header>
+
+    <spam id='blu'><br>-aside nav ul li a</spam>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">list 1</a></li>
+                <li><a href="#">list 2</a></li>
+                <li><a href="#">list 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <header>
+            <spam id="red">section header<br></spam>
+            <h4>h4 /Section that you want/ h4</h4>
+            <article>
+                <spam id="blu"><br>-h5 p</spam>
+                <h5>
+                    Article that you want(need one 'h1-6' for put 'p')
+                </h5>
+                <p>p /Text that you want/ p article</p>
+            </article>
+            <spam id="red"><br>header section</spam>
+        </header>
+    </section>
+
+    <footer>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element">
+            footer /link about semantic uses/ footer
+        </a>
+    </footer>
+    </p>
+
+</body>
+
+</html>

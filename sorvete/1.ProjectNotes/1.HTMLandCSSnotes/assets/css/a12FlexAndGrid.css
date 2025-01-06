@@ -1,0 +1,169 @@
+html {color: white;background: rgb(40,0,30);
+    font-size: 27px;}
+
+.bList {text-decoration-color: none;
+    background:darkslategray;
+    border: solid gray 3px;
+    list-style-type:' - ';
+    font-size:21px;
+    display:flex;
+    flex-wrap:wrap;
+    
+    gap:27px;
+    margin-left:-36px;}
+li a {color:currentColor;}
+li a:hover {transition: 243ms ease-in-out;
+    color:red;}
+
+li:nth-child(9), #a11Btext, .bHover {color:magenta;}
+li:nth-child(9):hover, #a11Btext:hover, .bHover:hover {transition: 243ms ease-in-out;
+    color:red;}
+
+/**/
+ul #a0 {color:magenta;}
+ul #a0:hover, ul #a9:hover {transition: 243ms ease-in-out;
+    color:red;}
+
+
+.yellowLine {background:rgb(255, 255, 0, 0.81);
+    margin-top:9px;
+    width:100%;height:6px;}
+
+.div1 {background:magenta;
+    display:flex;
+    flex-direction:row;
+    justify-content:start;
+    align-items:stretch;}
+.div2 {background:cyan;}
+
+.div3 {background:magenta;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:stretch;}
+.div4 {background:cyan;}
+.div5 {background:magenta;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;}
+.div6 {background:cyan;}
+.div7 {background:magenta;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;}
+.div8 {background:cyan;}
+.div9 {background:magenta;
+    height:81px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;}
+.div10 {background:cyan;
+    width:100%;
+    margin:1%;}
+.div11 {background:magenta;
+    height:81px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:stretch;
+    gap:27px;}
+.div12 {background:cyan;
+    width:100%;}
+.div13 {background:magenta;
+    height:81px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;}
+.div14 {background:cyan;}
+.div15 {background:magenta;
+    height:81px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:baseline;}
+.div16 {background:cyan;}
+.div16:nth-child(2) {font-size:54px;}
+.div17 {background:magenta;
+    height:81px;
+    display:inline-flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;}
+.div18 {background:cyan;}
+.div19 {background:magenta;
+    height:81px;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    gap:27px;}
+.div20 {background:cyan;}
+.div19p2 {background:magenta;
+    height:81px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:27px;}
+.div20p2 {background:cyan;}
+.div21 {height:81px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap:27px;}
+.div22 {background:cyan;}
+.div23 {height:81px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap:9px;}
+.div24 {background:cyan;}
+.div23 .div24:nth-child(2) {background:yellow;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:3;}
+.div23 .div24:nth-child(3) {background:magenta;
+    grid-column-start:2;
+    grid-column-end:span2;
+    grid-row-start:1;}
+.div25 {height:81px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+    gap:27px;}
+.div26 {background:cyan;}
+.div25 .div26:nth-child(2) {background:yellow;
+    grid-area:2/3/3/4;}
+.div27 {display:grid;
+    grid-template-rows: 81px;
+    grid-template-columns: 81px 1fr 81px;
+    grid-template-areas: 'a3 a1 a2';
+    gap:27px;}
+.div28 {background:cyan;}
+.div27 .div28:nth-child(1) {grid-area:a1}
+.div27 .div28:nth-child(2) {grid-area:a2}
+.div27 .div28:nth-child(3) {grid-area:a3}
+
+
+.div29 {display:grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'logH4 logH4'
+    'menuNav textH5'
+    'footerFooter footerFooter';
+    gap:3px;}
+.div30 {background:cyan;}
+.div29 .div30:nth-child(1) {grid-area:logH4; background:magenta;
+    display:flex; justify-content:center; align-items:center;}
+.div29 .div30:nth-child(2) {grid-area:menuNav; background:yellow; color:black;}
+.div29 .div30:nth-child(3) {grid-area:textH5; color:black;
+    padding:9px;}
+.div30 h5 {display:flex; justify-content:center;}
+.div29 .div30:nth-child(4) {grid-area:footerFooter; background:red;
+    padding:9px;}
+
+@media all and (max-width:721px) {.div29 {display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'logH4'
+    'menuNav'
+    'textH5'
+    'footerFooter';
+    gap:3px;}}

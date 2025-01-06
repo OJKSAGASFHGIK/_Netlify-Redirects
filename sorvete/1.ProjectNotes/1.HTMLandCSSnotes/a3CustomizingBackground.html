@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizing background</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .custom1 {
+        color: white;
+        width: 426px;
+        height: 240px;
+        padding: 9px 27px;
+
+        border-style: solid;
+        border-top-color: black;
+        border-right-color: red;
+        border-bottom-color: purple;
+        border-left-color: blue;
+        border-width: 6px;
+
+        background-size: cover;
+        background-image: url(https://wallup.net/wp-content/uploads/2018/03/23/567289-wolf-space-galaxy-sleeping.jpg);
+
+        margin: 27px;
+    }
+
+    .custom2 {
+        width: 426px;
+        height: 240px;
+        color: white;
+        padding: 9px;
+
+        border: solid blue 6px;
+
+        background-size: cover;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jrZCaeoA1yRU2KvZJT8Rn069hojN0R_GvQ&usqp=CAU);
+
+        margin: 27px;
+    }
+</style>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <section class='custom1'>
+        Wolf
+    </section>
+    <section class='custom2'>
+        Wolf 2
+    </section>
+    <footer>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">
+            - Content
+        </a>
+    </footer>
+</body>
+
+</html>

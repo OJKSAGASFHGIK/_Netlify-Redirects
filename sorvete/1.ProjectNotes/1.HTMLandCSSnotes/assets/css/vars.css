@@ -1,0 +1,5 @@
+.button {margin:0; padding:9px; background: white;
+    border:solid 3px black;
+    display:flex; justify-content: space-between;}
+
+.button option {font-size: 27px;}

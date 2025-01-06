@@ -1,0 +1,57 @@
+.bodyDark {
+    background: rgb(40, 0, 30);
+    color: rgb(255, 255, 255);
+}
+
+/**/
+.b1hover:hover {color:white !important;
+background:red !important;
+cursor:pointer !important;
+
+transition: 243ms all ease-in-out;}
+.b1hover {color: white;
+text-decoration: none;
+
+font-size: 27px; 
+padding: 3px;}
+
+/**/
+a:link:not(.b1hover) {color: white;}
+a:visited:not(.b1hover) {color: pink;}
+a:hover:not(.b1hover) {color:black;
+    background: white;}
+
+/**/
+.linkCSS:active { background: yellow;
+text-decoration: none; }
+a:active { background: yellow;
+text-decoration: none; }
+
+/*go deep in: focus and disabled*/
+input:focus { box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border: 1px solid black;}
+input:disabled { background-color: red;
+    cursor: not-allowed; }
+input:checked + p { background: red; }
+
+/**/
+.mainList .listCSS li:first-child { background: rebeccapurple; }
+.mainList .listCSS li:last-child { background: yellow; }
+.mainList .listCSS li:nth-child(3n+2) { color: black; background: pink; }
+
+/**/
+.mainList .listCSS li::after { content:' --> after '; }
+.mainList .listCSS li::before { content:' before <-- '; }
+
+div ul li::first-letter { font-size: 18px; font-weight: bold; }
+
+/**/
+.first-L-CSS::first-line { background:rebeccapurple; }
+/**/
+p::selection { background: green; }
+/**/
+::placeholder { color: pink; }
+
+/**/
+p { color:green; }
+p { color: inherit; }

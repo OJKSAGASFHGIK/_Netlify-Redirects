@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doing a formulary</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+</head>
+
+<style>
+    a {
+        font-size: 27px;
+        background: rgb(0, 255, 170);
+    }
+
+    label,
+    button,
+    #pointer {
+        cursor: pointer;
+    }
+
+    #a1str {
+        cursor: pointer;
+        display: block;
+    }
+
+    input {
+        margin-top: 3px;
+    }
+
+    pre {
+        background-color: rgb(255, 200, 200);
+    }
+</style>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <form action="path\of\folder" method="post" enctype="multipart/form-data" novalidate>
+        <a
+            href="https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165722#learning-tools">
+            Part 2 - link</a>
+        <label for="a2str" id="a1str">Name:</label>
+        <input type="text" id="a2str" name="str" value="" placeholder='input text'>
+
+        <button type="submit"> submit </button>
+        <button type="reset"> reset </button><br>
+        ===<br>
+
+        <label for="checkbox" id="pointer">Checkbox</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+        <br>
+        <label for="checkboxChecked" id="pointer">Checkbox checked</label>
+        <input type="checkbox" id="checkboxChecked" name="checkboxChecked" checked value="yes">
+        <br>
+        <label for="checkboxCheckedRequired" id="pointer">Checkbox checkd required</label>
+        <input type="checkbox" id="checkboxCheckedRequired" name="checkboxCheckedRequired" checkd required value="yes">
+        <br>
+        ===<br>
+
+        <label for="radio">Radio</label>
+        <input type="radio" id="radio" name="radio" value="radio"><br>
+        <label for="radio2">Radio checked</label>
+        <input type="radio" id="radio2" name="radio2" checked value="radioChecked"><br>
+        =========<br>
+
+        <a
+            href="https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165726#learning-tools">
+            Part 3 - link</a><br>
+
+        <label for="date" id="pointer">Date:</label>
+        <input type="datetime-local" id="date" name="date" value='2000-03-21T15:00'><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" value="00:00:01"><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" value="#ff66ff"><br>
+        <a href>Colors - link(w3schools)</a><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="ex: email@email.com"><br>
+
+        <label for="file">Send your photos:</label>
+        <input type="file" id="file" name="file" accept='image/*' multiple><br>
+
+        <label for="number">Your age(type a number):</label>
+        <input type="number" id="number" name="number" min="0" max="9999" placeholder="step 3 by 3" step='3'
+            style="width:108px"><br>
+        =========<br>
+
+        <a
+            href="https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165728#learning-tools">
+            Part 4 - link</a><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="10" step="2" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="0" label="0%">
+            <option value="2" label="20%">
+            <option value="4" label="40%">
+            <option value="6" label="60%">
+            <option value="8" label="80%">
+            <option value="10" label="100%">
+        </datalist><br>
+
+        <label for="url">Url:</label>
+        <input type="url" id="url" name="url" placeholder="Your url"><br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search"><br>
+
+        <label for="select">Select:</label>
+        <select id="select" name="select" style="margin-top:3px">
+            <option value="a1" label="label1" disabled>
+            <option value="a2" label="label2">
+            <option value="a3" label="label3">
+            <option value="a4" label="label4" selected>
+        </select><br>
+
+        <label for="textarea">
+            <textarea id="textarea" name="textarea" cols="36" rows="18" style="margin-top:3px">a</textarea>
+    </form>
+    <pre>
+        -Basic understanding:
+        link:
+        https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165720#learning-tools
+        4:48 - /form
+        <!-- form means formulary -->
+        7:37 - /form action='#' method='get' target='_blank' autocomplete='off'
+        <!--In 'form' action you can add files and links.-->
+        <!--For default 'form' use the method 'get' but you can add this if you want.-->
+        <!--For send your 'form' and reloud your page, you use 'target="_blank", but 
+            if you want, you don't need this.'-->
+        <!--'autocomplete="off"' is for he don't saying for you things that you typed. In
+        general if you don't need this, you don't use.-->
+        10:22 - /legend /fieldset
+        11:05 - >input type='text' /p /fieldset
+    
+        ===
+        -What you need know:
+        link:
+        https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165722#learning-tools
+        0:40 - /input type='text' id='nome' name='nome'
+        <!--'name' is for you know what that the user typed. THE FUNCTION-->
+        3:48 - >input type='text' id='str' name='str' placeholder='str' value='str'
+        <!--value is THE VALUE, but you don't need this becouse of the input-->
+        5:54 - disable
+        <!--used in input. For disable-->
+        6:06 - readonly
+        <!--similar, but you can edit this-->
+        6:55 - submit /button type='submit' /p /form
+        7:36 - reset /button type='reset' /p /form
+        9:46 - >label /p /form
+        10:26 - label { display: block; }
+        10:56 - label { cursor: pointer; }
+        11:58 - >label for='id'
+        12:22 - label { display: block; }
+        14:00 - some text/label for='dev'
+        14:17 - >input type='checkbox' id='dev' name='dev' value='sim'
+        16:14 - >input type='checkbox' id='dev' name='dev' value='sim' checked
+        16:24 - >input type='checkbox' id='dev' name='dev' value='sim' checked required
+    
+        20:03 - >label for='a1'
+        >input type='radio' id='a1' name='mesmoNomePraMarcacaoIndividual' value='a1' checked
+    
+        >label for='a2'
+        >input type='radio' id='a2' name='mesmoNomePraMarcacaoIndividual' value='a2'
+    
+        ===
+        -Part 3:
+        link:
+        https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165726#learning-tools
+        0:14 - >input type='date'
+    
+        1:24 - >label for='date'
+        >input type='date' id='date' name='date' value='2000-03-21'
+        2:35 - >input type='datetime-local'
+        2:35 - >datetime
+        2:35 -
+        >input type='datetime-local' id='datetime' name='datetime' value='2000-03-21T10:00'
+        3:25 - >input type=time value='03:03:03'
+    
+        4:20 - >input type='color' value='#FF0000'
+        4:20 - 'In value, you have to fix some color code. You don't need know this, becouse
+        you can take the color that you want in this link:
+        https://www.w3schools.com/colors/colors_picker.asp'
+    
+        6:08 - >input type='email' placeholder='ex: name@email.com'
+        7:46 - >input type='file' accept='.png,.jpg,.svg,image/*' multiple
+        10:58 - >input type='number' placeholder='Digite um número'
+        min='0' max='9999' step='3'
+    
+        ===
+        -Part 4:
+        0:12 - >input type='password' value='FakePSW' placeholder='Digite sua senha'
+        0:12 - >input type='checkbox' onclick='myFunction()'
+    
+        0:53 - >input type='range' min='0' max='10' step='2' list='tickmarks'
+        2:15 - >option value='50' label='50%' /datalist id='tickmarks'
+    
+        5:06 - >label for='url'
+        >input type='url' id='url' name='url' placeholder='Sua url'
+    
+        5:58 - 'The same pattern:'
+        5:58 - search
+        6:50 - >label for='select'
+        >option value='a0' label='print0' disabled
+        >option value='a1' label='print1'
+        >option value='a2' label='print2'
+        >option value='a3' label='print3' selected
+        /optgroup /select multiple
+    
+        10:52 - >label for='textarea'
+        /textarea id='textarea' name='textarea' rows='27' cols='18'
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\vars.css">
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <script src="assets\jsCodes\a5Events.js" defer="defer"></script>
+</head>
+
+<body onload="func10Loaded()" onresize="func10Resize()">
+    <section id="Layout" class="button"></section>
+    <aside class="button2mini-menu">
+        <ul>
+            <li><a href="#a1">button onclick="functionName"</a></li>
+            <li><a href="#a2">button ondblclick="functionName"</a></li>
+            <li><a href="#a3">onmouserover="" onmouseout=""</a></li>
+            <li><a href="#a4">onmousemove=""</a></li>
+            <li><a href="#a5">onmousedown="func1" onmouseup="func1"</a></li>
+            <li><a href="#a6">onfocus="" onchange="" onblur=""</a></li>
+            <li><a href="#a7">onkeydown="" onkeypress="" onkeyup=""</a></li>
+            <li><a href="#a8">onload="" onresize=""</a></li>
+        </ul>
+    </aside>
+
+    <div>
+        <div id="a1">
+            <h1 class="line">button onclick="functionName"</h1>
+            <pre id="note1"></pre>
+            <div class="block">
+                <button onclick="func1Color()">Red</button>
+            </div>
+        </div>
+
+        <div id="a2">
+            <h1 class="line">button ondblclick="functionName" / "Clique 2 vezes"</h1>
+            <pre id="note2"></pre>
+            <div class="block">
+                <button ondblclick="func2Color()">Gray</button>
+            </div>
+        </div>
+
+        <div id="a3">
+            <h1 class="line">onmouserover="" onmouseout="" / "Passe o mouse em cima da caixa"</h1>
+            <pre></pre>
+            <div class="block" id="id1OnMouse" onmouseover="func3OnMouseOver()" onmouseout="func3OnMouseOut()" style="
+                background:cyan;
+                width: 81px; height: 81px;
+                margin: 0 auto;"></div>
+        </div>
+
+        <div id="a4">
+            <h1 class="line">onmousemove="" / "Mover o mouse em cima"</h1>
+            <pre id="note3"></pre>
+            <div class="block">
+                <p id="id2OnMouseMove" style="width: 95%; margin: 0 auto; word-wrap: break-word;"></p>
+                <div onmousemove="func4OnMouseMove()" style="
+                    background:cyan;
+                    width: 81px; height: 81px;
+                    margin: 0 auto;"></div>
+            </div>
+        </div>
+
+        <div id="a5">
+            <h1 class="line">onmousedown="func1" onmouseup="func1" <br>
+                // Clicar botão do mouse, soltar botão do mouse</h1>
+            <pre></pre>
+            <div class="block">
+                <p id="id3OnMouseDown" style="width: 95%; margin: 0 auto; word-wrap: break-word;"></p>
+                <div onmousedown="func5OnMouseDown()" onmouseup="func5OnMouseDown()" style="
+                    background:cyan;
+                    width: 81px; height: 81px;
+                    margin: 0 auto;"></div>
+            </div>
+        </div>
+
+        <div id="a6">
+            <h1 class="line">onfocus="func1" // Quando o elemento recebe foco<br>
+                onchange="func2" // Quando o elemento é alterado (aperte enter)<br>
+                onblur="func3" // Quando o elemento perde foco</h1>
+            <pre></pre>
+            <div class="block">
+                <input type="text" id="id4OnFocus" onfocus="func6OnFocus()" onchange="func7OnChange()"
+                    onblur="func8OnBlur()"></input>
+            </div>
+        </div>
+
+        <div id="a7">
+            <h1 class="line">onkeydown="" onkeypress="" onkeyup=""</h1>
+            <pre></pre>
+            <div class="block" style="height:243px;">
+                <br><input id="id5Button" type="text" onkeydown="func9OnKeyDown()">onkeydown=""</input>
+                <p id="id5Output" style="width: 95%; margin: 0 auto; word-wrap: break-word;"></p>
+                <input id="id6Button" type="text" onkeypress="func9OnKeyPress()">onkeypress=""</input>
+                <p id="id6Output" style="width: 95%; margin: 0 auto; word-wrap: break-word;"></p>
+                <input id="id7Button" type="text" onkeyup="func9OnKeyUp()">onkeyup=""</input>
+                <p id="id7Output" style="width: 95%; margin: 0 auto; word-wrap: break-word;"></p>
+            </div>
+        </div>
+
+        <div id="a8">
+            <h1 class="line">onload="" // Page on load<br>
+                onresize="" // Page resized
+            </h1>
+            <pre></pre>
+            <div class="block" id="id8Loaded"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoints</title>
+
+    <link rel="stylesheet" href="assets\css\vars.css" defer>
+    <script src="assets\js\a1Base.js" defer></script>
+
+    <link rel="stylesheet" href="assets\css\a11Breakpoints.css">
+</head>
+
+<body>
+    <section id="Layout" class="button"></section>
+
+    <h2 style="text-shadow:-3px -3px 2px red, 3px 3px 2px blue">Breakpoints</h2>
+    <div class="block1">
+        <div class="background1">
+            <span><br>border-radius: 10% 20% 30% 40%;</span>
+        </div>
+    </div>
+    <div class="block2">
+        <div class="background2">
+            <span style="color:magenta">box-shadow:3px 3px 7px 1px magenta, inset -3px -3px 7px 1px yellow;</span>
+        </div>
+    </div>
+    <div class="block3">
+        <div class="background3"></div>
+    </div>
+    <div class="block1">
+        <div class="background1"></div>
+    </div>
+    <div class="block2">
+        <div class="background2"></div>
+    </div>
+    <div class="block3">
+        <div class="background3"></div>
+    </div>
+    <div class="block1">
+        <div class="background1"></div>
+    </div>
+    <div class="block2">
+        <div class="background2"></div>
+    </div>
+    <div class="block3">
+        <div class="background3"></div>
+    </div>
+    <pre style="font-size:14px;float:left;">
++Breakpoints:
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165796#overview
+-link:https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+3:35 - '@media'
+3:50 - 'not, and, only, or'
+4:20 - '@media all and (HereYouPutTheConditionIf) {.class {stylesForTheCondition}}
+example:'
+@media (max-width:320px) {.class {width:100%}}
+
+9:10 - @media all and (min-width:321px) and (max-width:768) {
+    .class {
+        width: 50%;
+    }
+}
+9:44 - ''@media all' means all devices'
+
+10:41 - @media all and (min-width:769px) and (max-width:1200) {
+    .class {
+        width: 33,33%;
+    }
+}
+10:41 - @media all and (min-width:769px) and (max-width:1200) {
+    .class {
+        width: 33,33%;
+    }
+}
+11:12 - @media all and (min-width:1200px) {.class {width:25%}}
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165812#overview
+0:00 - div { border-radius: 100px; }
+0:00 - div { border-radius: 10% 20% 30% 40%; }
+
+===
+-link:https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29165814#overview
+0:00 - 'box-shadow: 'rightAndLeft' 'TopAndBottom' 'Shadow' 'Scattering' 'color';
+    examples:'
+0:00 - div {box-shadow: -3px -3px 2px 1 red, inset 3px 3px 2px 1 blue;}
+0:00 - 'You really can put 2 effects in the same'
+</pre>
+</body>
+
+</html>
