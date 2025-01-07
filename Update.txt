@@ -3,4 +3,3 @@ Package directory:
 Build command:
 Publish directory:
 Functions directory:
-.
