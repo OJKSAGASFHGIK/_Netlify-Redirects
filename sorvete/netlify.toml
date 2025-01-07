@@ -1,4 +1,4 @@
-publish = "."
+publish = "aaaaaaaa/."
 command = "echo 'no build script'"
 
 [[redirects]]
